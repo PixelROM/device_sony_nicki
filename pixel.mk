@@ -12,21 +12,21 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Inherit CM common GSM stuff.
-$(call inherit-product, vendor/cm/config/gsm.mk)
+# Inherit pixel common GSM stuff.
+$(call inherit-product, vendor/pixel/config/gsm.mk)
 
 # Enhanced NFC
-$(call inherit-product, vendor/cm/config/nfc_enhanced.mk)
+$(call inherit-product, vendor/pixel/config/nfc_enhanced.mk)
 
-# Inherit some common CM stuff.
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+# Inherit some common pixel stuff.
+$(call inherit-product, vendor/pixel/config/common_full_phone.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/sony/nicki/full_nicki.mk)
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := nicki
-PRODUCT_NAME := cm_nicki
+PRODUCT_NAME := pixel_nicki
 PRODUCT_BRAND := Sony
 PRODUCT_MODEL := C1905
 PRODUCT_MANUFACTURER := Sony
